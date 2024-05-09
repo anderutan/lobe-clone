@@ -1,8 +1,12 @@
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+
 function App() {
   return (
-    <>
-      <p className=''>testing</p>
-    </>
+    <div className=''>
+      <Navbar />
+      <Main />
+    </div>
   );
 }
 
