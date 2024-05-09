@@ -13,11 +13,11 @@ const variants = {
 const Navbar = () => {
   const linkStyle =
     'font-medium md:transition-all md:duration-500 md:ease-in-out md:hover:scale-110';
-  const isAboveMediumScreenSize = useMediaQuery('(min-width: 640px)');
+  const isAboveMediumScreenSize = useMediaQuery('(min-width: 900px)');
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
   return (
-    <div>
+    <div className='fixed top-0 right-0 left-0 w-full md:max-w-[1440px] md:mx-auto bg-white z-30'>
       <div className='w-full px-6 py-4 md:p-4 flex items-center justify-between'>
         <a className='flex items-center' href='#home'>
           <p className='text-2xl font-bold'>lobe</p>
@@ -47,7 +47,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div>
-              <button className='text-white bg-button py-2 px-5 rounded-3xl font-semibold'>
+              <button className='text-white bg-button py-2 px-5 rounded-3xl font-semibold hover:scale-110 ease-in-out duration-500'>
                 Download
               </button>
             </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className='px-8 flex flex-col'>
+          <div className='px-8 flex flex-col '>
             <button className='text-white bg-button py-2 px-5 rounded-3xl font-semibold '>
               Download
             </button>
