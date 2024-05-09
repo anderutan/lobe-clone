@@ -12,7 +12,7 @@ const variants = {
 
 const Navbar = () => {
   const linkStyle =
-    'font-medium transition-all duration-500 ease-in-out hover:scale-110';
+    'font-medium md:transition-all md:duration-500 md:ease-in-out md:hover:scale-110';
   const isAboveMediumScreenSize = useMediaQuery('(min-width: 640px)');
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
