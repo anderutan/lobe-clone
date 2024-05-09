@@ -34,9 +34,9 @@ const Main = () => {
               src='https://www.youtube.com/embed/Mdcw3Sb98DA?si=1NEW9rJYpPeR6soR'
               title='YouTube video player'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              referrerpolicy='strict-origin-when-cross-origin'
-              allowfullscreen
-              className='h-64 w-full md:w-5/6 md:h-3/6 md:rounded-2xl my-12 shadow-xl'
+              referrerPolicy='strict-origin-when-cross-origin'
+              allowFullScreen
+              className='h-64 w-full md:w-2/3 lg:w-1/2 md:h-3/6 md:rounded-2xl my-12 shadow-xl'
             ></iframe>
           </div>
         ) : (
